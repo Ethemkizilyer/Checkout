@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+}
+/* *********************FORM KISMI ******************/
+form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+  text-align: left;
+}
+
+.doldur {
+  margin: 10px 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+form i {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0.5rem;
+  color: rgb(117, 111, 111);
+}
+
+form .son {
+  width: 100%;
+}
+label {
+  width: 90%;
+}
+
+input:not(#olmaz) {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  padding-left: 2rem;
+  border: 1px solid rgb(161, 158, 158);
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  padding-left: 2rem;
+}
+
+.ulke {
+  display: inline-block;
+  width: 30%;
+}
+.posta {
+  display: inline-block;
+  width: 68%;
+}
+/****************** BOX KISMII ******************/
+.box {
+  width: 400px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #eeeeee;
+  border-radius: 15px;
+}
+
+.box .resim {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  width: 100%;
+}
+.box .resim .yan {
+  padding: 10px 0;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  align-items: flex-start;
+}
+.box .resim .yan .üst p {
+  margin-top: 0.4rem;
+  text-align: left;
+}
+
+.box .resim .yan .alt {
+  display: flex;
+  gap: 1rem;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid rgb(150, 136, 136);
+}
+h2 {
+  font-size: 16px;
+}
+form h1 {
+  font-size: 18px;
+}
+
+.fiyat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(150, 136, 136);
+}
+.ürün {
+  margin-top: 5rem;
+}
+img {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+span {
+  text-decoration: line-through;
+
+  font-size: 14px;
+}
+strong {
+  color: orange;
+}
+
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .box {
+    order: 1;
+  }
+  form {
+    order: 2;
+  }
+}
