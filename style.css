@@ -157,6 +157,10 @@ strong {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 0;
+  
+}
+button{
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
