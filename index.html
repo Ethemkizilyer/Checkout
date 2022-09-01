@@ -79,9 +79,9 @@
             <h2>Vintage Backbag</h2>
             <p><strong>$54.99</strong> <span>$94.99</span></p>
             </div><div class="alt">
-              <button><i class="fa-solid fa-minus" style=" background-color:rgb(230, 219, 219)"></i></button>
+              <button onclick="e()"><i class="fa-solid fa-minus" style=" background-color:rgb(230, 219, 219)"></i></button>
               <p>1</p>
-              <button><i class="fa-solid fa-plus" style=" background-color:rgb(230, 219, 219)"></i></button>
+              <button onclick="er()"><i class="fa-solid fa-plus" style=" background-color:rgb(230, 219, 219)"></i></button>
             </div>
           </div>
         </div>
@@ -95,9 +95,9 @@
             <h2>Vintage Backbag</h2>
             <p><strong>$74.99</strong> <span>$94.99</span></p></div>
             <div class="alt">
-              <button><i class="fa-solid fa-minus" style=" background-color:rgb(230, 219, 219)"></i></button>
+              <button onclick="e()"><i class="fa-solid fa-minus" style=" background-color:rgb(230, 219, 219)"></i></button>
               <p>1</p>
-              <button><i class="fa-solid fa-plus" style=" background-color:rgb(230, 219, 219)"></i></button>
+              <button onclick="er()"><i class="fa-solid fa-plus" style=" background-color:rgb(230, 219, 219)"></i></button>
             </div>
           </div>
         </div>
@@ -115,6 +115,17 @@
          <!-- SAĞ KISIM ALT TARAF SON -->
       </div>
     </main>
-    <button id="btn">Continue</button>
+    <button id="btn" onclick="ert()">Continue</button>
+    <script>
+      function ert(){
+        alert("Yükleniyor...(2 Haftaya)")
+      }  
+      function er(){
+        alert("Az bekleyin...")
+      }  
+      function e(){
+        alert("Emin misin...")
+      }  
+    </script>
   </body>
 </html>
