@@ -121,7 +121,7 @@ select {
   border: 1px solid rgb(150, 136, 136);
 }
 h2 {
-  font-size: 16px;
+  font-size: 18px;
 }
 form h1 {
   font-size: 18px;
@@ -143,7 +143,7 @@ img {
 
 span {
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 13px;
 }
 strong {
   color: orange;
