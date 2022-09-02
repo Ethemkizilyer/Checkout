@@ -14,18 +14,19 @@
 
         <!-- SOL TARAF BASKISMI -->
 
-      <form action="">
+      <form id="myform" action="result.html" method="get">
+        
         <div class="ilk">
           <h1>Contact Information</h1>
           <div class="doldur">
             <i class="fa-solid fa-envelope"></i>
-            <label  for="">Email</label>
-            <input type="email" placeholder=" Enter your email..." />
+            <label  for="Email">Email</label>
+            <input name="Email" type="email" placeholder=" Enter your email..." />
           </div>
           <div class="doldur">
             <i class="fa-solid fa-phone"></i>
             <label for="">Phone</label>
-            <input type="number" placeholder="Enter your phone..." />
+            <input name="Phone" type="number" placeholder="Enter your phone..." />
           </div>
         </div>
         <div class="son">
@@ -33,22 +34,22 @@
           <div class="doldur">
             <i class="fa-solid fa-user"></i>
             <label for="">Full name</label>
-            <input type="text" placeholder="Enter your Full name..." />
+            <input name="Full Name" type="text" placeholder="Enter your Full name..." />
           </div>
           <div class="doldur">
             <i class="fa-solid fa-house-chimney"></i>
             <label for="">Address</label>
-            <input type="text" placeholder="Enter your address..." />
+            <input name="Adress" type="text" placeholder="Enter your address..." />
           </div>
           <div class="doldur">
             <i class="fa-solid fa-city"></i>
             <label for="">City</label>
-            <input type="text" placeholder="Enter your city..." />
+            <input name="City" type="text" placeholder="Enter your city..." />
           </div >
           <div class="doldur ulke">
             <i class="fa-solid fa-earth-europe"></i>
             <label for="">Country</label>
-            <select name="" id="">
+            <select name="Country" id="">
               <option value="">Turkey</option>
               <option value="">Japan</option>
               <option value="">Fınland</option>
@@ -59,13 +60,14 @@
           <div class="doldur posta">
             <i class="fa-solid fa-envelopes-bulk"></i>
             <label for="">Post Code</label>
-            <input type="number" placeholder="Enter your postal code..." />
+            <input name="Postal Code" type="number" placeholder="Enter your postal code..." />
           </div>
           <div class="doldur checkbox">
-            <input type="checkbox" id="olmaz" placeholder="" />
+            <input name="Onayla" type="checkbox" id="olmaz" placeholder="" />
             <label for="">See this information next time</label>
           </div>
         </div>
+        
       </form>
       <!-- SOL KISIMM SON -->
 
@@ -115,11 +117,12 @@
          <!-- SAĞ KISIM ALT TARAF SON -->
       </div>
     </main>
-    <button id="btn" onclick="ert()">Continue</button>
+    <button id="btn" form="myform"  onclick="ert()">Continue</button>
     <script>
-      function ert(){
-        alert("Yükleniyor...(2 Haftaya)")
-      }  
+      // function ert(){
+      //   // alert("Yükleniyor...(2 Haftaya)")
+      //   window.location.href = "http://127.0.0.1:5501/result.html";
+      // }  
       function er(){
         alert("Az bekleyin...")
       }  
