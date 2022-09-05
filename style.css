@@ -78,7 +78,7 @@ select {
 }
 /****************** BOX KISMII ******************/
 .box {
-  height: 65vh;
+  height: 70vh;
   padding: 1rem;
   display: flex;
   flex-direction: column;
